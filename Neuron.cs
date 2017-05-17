@@ -9,10 +9,10 @@ namespace Neuron
 
     class Neuron
     {
-        public List<float> weight;
-        float threshold;
+        public List<float> weight;                          //массив весов
+        float threshold;                                    //пороговое значение для функции активации
 
-        public int Activate(List<int> inp)
+        public int Activate(List<int> inp)                  //функция активации
         {
             if (inp.Count == weight.Count)
             {
